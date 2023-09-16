@@ -1,0 +1,109 @@
+.diff h5 {
+    font-size: 48px;
+    text-shadow: 1px 2px rgb(144, 229, 136);
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20%;
+    margin-top: 210px;
+    margin-bottom: 30px;
+}
+
+.diff p {
+    font-size: 21px;
+    margin-left: 20%;
+
+}
+
+.diff table {
+    margin-left: 20%;
+    margin-top: 50px;
+    margin-bottom: 210px;
+}
+
+
+
+
+
+
+.box{
+    width: 500px;
+    margin: 0 auto;
+    margin-left: 10px;
+    
+}
+.icon{
+    
+    
+    color: black;
+    font-size: 60px;
+    padding: 20px;
+    
+    
+ }
+ .contect{
+
+    display: flex;
+    height: 200px;
+    padding: 20px;
+
+ }
+ .main-box{
+    display: flex;
+    justify-content: space-between;
+    
+    
+ }
+.main-box div{
+    margin-left: 30px;
+    
+    
+}
+.main-box2{
+    text-align: 0 left;
+    
+}
+.foot{
+    background-color: rgb(225, 217, 217);
+    height: 350px;
+    margin-top: 150px;
+    padding-left: 15%;
+    padding-top: 50px;
+}
+
+.contect i{
+    margin-top: 30px;
+    margin-left: 15px;
+
+}
+
+.foot h1{
+    margin-left: 27px;
+}
+
+.main-box2 input{
+    border: 1px solid rgb(168, 165, 165);
+    height: 54px;
+    width: 210px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.main-box2 input[placeholder]{
+    padding: 20px;
+}
+
+.main-box2 button{
+    background-color: black;
+    color: white;
+    font-size: large;
+    height: 50px;
+    width: 360px;
+    box-shadow: 3px 3px  rgb(53, 176, 53);
+}
+
+.main-box2 span{
+    color: rgb(6, 154, 6);
+}
+
+
+
+
