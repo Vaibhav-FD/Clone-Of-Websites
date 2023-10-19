@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color-scheme: dark;
+  /* outline: 1px solid green; */
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --blue: rgb(33, 36, 61);
+  --cream: rgb(255, 209, 126);
+}
+
+
+
+
+
+
+
+
+/*  NAV STARTS  */
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9%;
+  background-color: var(--blue);
+  padding: 0.6% 2.7%;
+}
+
+#logo {
+  width: 12.9%;
+}
+
+#search {
+  width: 2.1%;
+}
+
+#navlinks {
+  width: 54%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#navlinks2 summary{
+  display: none;
+  font-size: 1.8125rem;
+}
+
+#navlinks a {
+  color: white;
+  font-size: 1.3125rem;
+}
+
+#navlinks a:hover {
+  color: orange;
+  border-bottom: 2px solid orange;
+  padding-bottom: 6.3%;
+}
+
+#search:hover {
+  transform: rotate(360deg);
+  color: green;
+  transition: transform 1008ms;
+}
+
+
+
+/*  NAV ENDS  */
+
+
+header {
+  background-image: url(Multimedia/headerbgimg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headcontent {
+  width: 54%;
+  margin-inline: 2.7%;
+  padding-bottom: 12.9%;
+}
+
+.headcontent * {
+  display: block;
+  margin-top: 12.9%;
+
+}
+
+.headcontent h1 {
+  font-size: 5.0625rem;
+}
+
+.headcontent p {
+  font-size: 27px;
+}
+
+.headcontent a {
+  width: 24%;
+  color: white;
+  font-weight: 630;
+  background-color: var(--blue);
+  padding: 1.5% 3.6%;
+  text-align: center;
+  border-radius: 1.3125rem;
+}
+
+
+
+
+
+
+
+/*  POPULAR MENU  &  STATTISTICS STARTS  */
+
+
+#menu,
+#statistics {
+  background-color: var(--blue);
+  padding-block: 8.1%;
+}
+
+.menutext,
+.stattext {
+  text-align: center;
+  width: 45%;
+  margin-inline: auto;
+  margin-bottom: 4.5%;
+}
+
+.menutext>h2,
+.stattext>h2 {
+  font-size: 3.375rem;
+  margin-bottom: 3.6%;
+}
+
+.menutext>p,
+.stattext>p {
+  font-size: 1.3125rem;
+}
+
+
+.fooditem,
+.statitem {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.food {
+  width: 20%;
+  text-align: center;
+}
+
+.food>img {
+  width: 75%;
+  height: 210px;
+  border-radius: 50%;
+}
+
+.food>h2,
+.food>p {
+  margin-top: 3.9%;
+}
+
+
+
+.stat {
+  width: 12.9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3.9%;
+  border-radius: 50%;
+  outline: 3px solid whitesmoke;
+}
+
+.stat>h3 {
+  font-size: 4.3125rem;
+}
+
+.stat>p {
+  font-size: 2.0625rem;
+}
+
+.statitem {
+  margin-top: 9%;
+}
+
+
+
+
+
+/*  POPULAR MENU &  STATTISTICS  ENDS  */
+
+
+
+
+
+
+
+
+
+/*  FOOD SECTION 3 AND 5 STARTS  */
+
+
+#food3,
+#food5 {
+  background-color: var(--cream);
+  padding-block: 12.9%;
+}
+
+.food3,
+.food5 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.food3text,
+.food5text {
+  width: 40%;
+}
+
+.food3text *,
+.food5text * {
+  display: block;
+  margin-top: 9%;
+}
+
+.food3>img,
+.food5>img {
+  width: 33%;
+  height: 360px;
+  border-radius: 50%;
+}
+
+.food3text>h3,
+.food5text>h3 {
+  font-size: 3.375rem;
+  color: var(--blue);
+}
+
+.food3text>p,
+.food5text>p {
+  font-size: 1.8125rem;
+  color: var(--blue);
+}
+
+.food3text>a,
+.food5text>a {
+  width: 33%;
+  font-size: 1.3125rem;
+  color: white;
+  background-color: var(--blue);
+  text-align: center;
+  padding: 1.5% 2.7%;
+  border-radius: 3.375rem;
+}
+
+
+/*  FOOD SECTION 3 AND 5 ENDS  */
+
+
+
+
+
+
+
+
+
+/* FRAZIER  STARTS */
+
+#fra {
+  background-image: url(Multimedia/faizer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.frabgc {
+  background-color: rgba(33, 36, 61, 0.9);
+  padding-block: 9%;
+}
+
+.fratext {
+  width: 63%;
+  margin-inline: auto;
+}
+
+.fratext * {
+  margin-top: 2.7%;
+  text-align: center;
+}
+
+.fratext>img {
+  width: 24%;
+  display: block;
+  margin-inline: auto;
+  border-radius: 50%;
+}
+
+
+.fratext>h4 {
+  font-size: 2.0625rem;
+}
+
+.fratext>p {
+  font-size: 1.6875rem;
+}
+
+
+
+
+
+/* FRAZIER  ENDS */
+
+
+
+
+
+
+
+
+
+
+
+/*  EMAIL STARTS  */
+
+
+#emailsec {
+  background-color: var(--cream);
+  padding-block-start: 9%;
+  padding-block-end: 15.6%;
+  color: var(--blue);
+}
+
+.emailcontent {
+  width: 69%;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.emailcontent * {
+  margin-top: 2.7%;
+}
+
+.emailcontent>h5 {
+  font-size: 3.9375rem;
+}
+
+.emailcontent>p {
+  font-size: 1.6875rem;
+}
+
+#email {
+  width: 57%;
+  background-color: #fff;
+  padding: 0.9%;
+  color: black;
+  font-size: 1.3125rem;
+  border-radius: 3.375rem;
+  border: none;
+}
+
+.emadd>button {
+  padding: 1% 3.9%;
+  font-weight: 690;
+  font-size: 1.1875rem;
+  border-radius: 2.4375rem;
+  border: none;
+  background-color: var(--blue);
+}
+
+
+
+
+
+
+
+
+/*  EMAIL ENDS  */
+
+
+
+
+
+
+
+/* FOOTER STARTS */
+
+
+footer {
+  width: 93%;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+  padding-block: 8.1%;
+}
+
+.foot1 {
+  width: 39%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.foot2 {
+  width: 54%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.foot1>p {
+  font-size: 1.4375rem;
+}
+
+.socialmedia i {
+  font-size: 36px;
+  margin-right: 3.9%;
+}
+
+.socialmedia>i:hover {
+  transform: translatey(-6px);
+  transition: transform 309ms ease-out;
+}
+
+.foot2 * * {
+  margin-bottom: 0.9375rem;
+  color: white;
+}
+
+footer h6 {
+  font-size: 1.6875rem;
+  font-weight: 810;
+}
+
+.foot2 li {
+  font-size: 1.3125rem;
+}
+
+
+
+/* FOOTER ENDS */

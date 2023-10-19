@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+
+#sign {
+  padding: 2.1%;
+}
+
+.sign {
+  width: 81%;
+  margin-inline: auto;
+  display: flex;
+  box-shadow: 0px 0px 5px 1px gray,
+    0px 0px 5px 3px darkgray,
+    0px 0px 5px 1px rgba(128, 128, 128, 0.612);
+  border-radius: 6px;
+}
+
+.up,
+.in {
+  width: 50%;
+}
+
+.up {
+  padding: 3.9% 2.9%;
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading,
+.details {
+  margin-bottom: 6%;
+}
+
+.details * {
+  margin-block-start: 2.7%;
+}
+
+.endetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading>p {
+  color: grey;
+  font-weight: 600;
+}
+
+.details * {
+  color: grey;
+}
+
+.details>label {
+  font-size: 1rem;
+  font-weight: 540;
+}
+
+.details>input {
+  border: none;
+  border-bottom: 2px solid rgba(169, 169, 169, 0.477);
+  padding-block: 6px;
+}
+
+.details>input:focus {
+  outline: none;
+  color: blueviolet;
+  font-size: 1.125rem;
+}
+
+.details>input::placeholder {
+  font-size: 1.0625rem;
+}
+
+.details>button {
+  background-color: rgba(82, 138, 119, 0.669);
+  font-size: 0.9375rem;
+  color: white;
+  padding: 2.7%;
+  border: none;
+  border-radius: 0.375rem;
+  margin-top: 4.5%;
+}
+
+.endetails * {
+  color: grey;
+  font-weight: 609;
+  font-size: 0.9375rem;
+  margin-block-end: 3.6%;
+}
+
+.socialmedia>i {
+  color: rgba(34, 34, 244, 0.813);
+  font-size: 2.25rem;
+  padding-inline: 12px;
+}
+
+.endetails a {
+  color: rgba(38, 38, 199, 0.763);
+}
+
+
+
+
+
+
+
+.in {
+  background-color: rgba(82, 138, 119, 0.669);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.in>img {
+  width: 69%;
+}
+
+.in * {
+  margin-top: 3.6%;
+}
+
+.in h2 {
+  font-size: 2.4375rem;
+}
+
+.in button {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 1.3125rem;
+  padding: 1.5%;
+  font-size: 1.0625rem;
+}
+
+.in :nth-child(2) {
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+
+
+  .sign {
+    width: 93%;
+  }
+
+  .in img {
+    width: 81%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+
+
+  .sign {
+    width: 96%;
+  }
+
+  .in img {
+    width: 72%;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+
+  .sign {
+    flex-direction: column-reverse;
+  }
+
+  .up,
+  .in {
+    width: 100%;
+    padding-bottom: 9.12%;
+  }
+
+  .in img {
+    width: 54%;
+  }
+
+}
