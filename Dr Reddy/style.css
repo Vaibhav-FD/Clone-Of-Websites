@@ -5,7 +5,7 @@
   text-decoration: none;
   list-style: none;
   font-family: Arial, Helvetica, sans-serif;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 
@@ -30,14 +30,25 @@ nav {
 }
 
 #navtop img {
-  width: 21%;
+  width: 100%;
+}
+#navtop>:nth-child(1){
+  width: 9%;
+}
+#navtop>:nth-child(2){
+  margin-left: auto;
+}
+
+#navtop details{
+  display: none;
 }
 
 #navtop>div {
-  width: 63%;
+  width: 57%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
+
 
 #navtop {
   display: flex;
@@ -62,7 +73,6 @@ nav {
 
 #navbottom a {
   color: rgb(65, 63, 63);
-
 }
 
 #navbottom li {
@@ -142,14 +152,15 @@ nav+img {
   margin-top: 39%;
 }
 
-#navtop>:nth-child(3) {
+#navtop>:nth-child(4) {
   padding-block: 1%;
   padding-left: 1.5%;
 }
 
-#navtop>:nth-child(3):hover .dropworld {
+#navtop>:nth-child(4):hover .dropworld {
   display: block;
 }
+
 
 
 
@@ -167,7 +178,7 @@ nav+img {
 
 /* GOOD HEALTH STARTS */
 
-#goodhealth {
+#goodhealth,#goodhealthlooklike{
   padding: 9.12%;
 }
 
@@ -175,18 +186,28 @@ nav+img {
   display: flex;
   gap: 9%;
   align-items: center;
+  
 }
 
-.gohelcontent>div {
-  position: relative;
-}
-
-.gohelcontent * {
+.gohelcontent>div * {
   margin-bottom: 9%;
 }
+.gohelcontent>div{
+  position: relative;
+}
+.gohelcontent img{
+  width: 50%;
+  height: 590px;
+}
 
-.gohelcontent h1 {
+
+
+.gohelcontent h2 {
   font-size: 2.8125rem;
+  font-weight: 540;
+}
+.gohelcontent h1{
+  font-size: 1.2rem;
   font-weight: 540;
 }
 
@@ -194,21 +215,22 @@ nav+img {
   font-size: 1.1875rem;
 }
 
+
 .gohelcontent a,
-.gohelcontent span {
+.gohelcontent span,.news>:nth-child(2) a,.news>:nth-child(2) span {
   display: inline-block;
   font-size: 1.6875rem;
   position: absolute;
   left: -0.2%;
 }
 
-.gohelcontent>div span {
+.gohelcontent>div span,.news>:nth-child(2) a span {
   left: 100%;
   bottom: 2%;
   display: none;
 }
 
-.gohelcontent a:hover {
+.gohelcontent a:hover,.news>:nth-child(2) a:hover {
   border-radius: 50%;
   padding: 3%;
   background-color: rgb(96, 10, 157);
@@ -216,14 +238,14 @@ nav+img {
   transition: all 210ms;
 }
 
-.gohelcontent a:hover span {
+.gohelcontent a:hover span,.news>:nth-child(2):hover a span {
   display: block;
   color: indigo;
   bottom: 18%;
   left: 120%;
 }
 
-.gohelcontent>div span {
+.gohelcontent>div span,.news>:nth-child(2) span{
   font-size: 19px;
   width: 120px;
 }
@@ -250,13 +272,17 @@ nav+img {
   padding: 9.12%;
   background-color: rgb(237,237,237);
 }
+.coretext{
+  display: flex;
+  flex-direction: column;
+}
 #ourcore>h2{
-  font-size: 45px;
+  font-size: 2.8125rem;
   padding-bottom: 1.9%;
   border-bottom: 2px solid red;
 }
 .coretext>:nth-child(1){
-  height: 45%;
+  height: 360px;
   overflow: hidden;
 }
 .coretext h3{
@@ -285,6 +311,66 @@ nav+img {
 
 
 
+  
+
+
+
+
+
+
+/* LATEST NEWS STARTS*/
+
+
+
+#latestnews{
+  padding: 9.12% 7.5%;
+}
+#latestnews>h5{
+  font-size: 2.8125rem;
+  padding-bottom: 1.8%;
+  border-bottom: 2px solid red;
+}
+.news{
+  margin-top: 3%;
+  display: flex;
+  border-right: 2px solid red;
+  position: relative;
+}
+.newstext p{
+  margin-inline: 6%;
+  padding-block: 9%;
+  font-size: 21px;
+  border-bottom: 2px solid red;
+  font-weight: 900;
+}
+
+.news>:nth-child(2){
+  position: absolute;
+  bottom: 0;
+  background-color: whitesmoke;
+  padding-top: 3%;
+  padding-right: 15%;
+}
+.news>:nth-child(2) p{
+  font-size: 39px;
+  margin-bottom: 27%;
+}
+
+.news>:nth-child(2) a{
+  bottom: 3%;
+}
+.news img{
+width: 63%;
+}
+
+
+
+
+
+/* LATEST NEWS ENDS*/
+
+
+
 
 
 
@@ -297,9 +383,11 @@ nav+img {
 
 
 footer{
-  padding: 4.5% 8.1%;
+  padding: 4.5% 9%;
   background-color: black;
   color: white;
+  position: relative;
+
 }
 
 #foottop{
@@ -312,6 +400,9 @@ footer{
 }
 #foottop p{
   margin-bottom: 0.5625rem;
+}
+#foottop div{
+  width: 27%;
 }
 
 
@@ -341,7 +432,7 @@ footer img{
 .foobot>:nth-child(1){
   display: flex;
   align-items: center;
-  width: 57%;
+  width: 69%;
   justify-content: space-between;
 }
 
@@ -352,6 +443,19 @@ footer img{
 #footbottom+p{
   margin-top: 1.2%;
 }
+#foottop>:last-child{
+  position: absolute;
+  right: 0;
+  padding: 0.9%;
+  background-color: white;
+  color: black;
+  border-radius: 54px 0px 0px 54px ;
+}
+#foottop>:last-child:hover{
+  background-color: purple;
+  color: white; 
+}
+
 
 
 
