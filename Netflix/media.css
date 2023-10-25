@@ -1,0 +1,332 @@
+@media (max-width: 1500px) {
+
+  nav>div {
+    width: 23%;
+  }
+
+  #tv img,
+  #download img,
+  #watch img,
+  #kids img,
+  #faq img {
+    width: 39%;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+
+  nav>img {
+    height: 9%;
+  }
+
+  nav>div {
+    width: 30%;
+  }
+
+  #tv,
+  #download,
+  #watch,
+  #kids,
+  #faq {
+    padding-block: 9%;
+  }
+
+  .tvcontent,
+  .downcontent,
+  .watcontent,
+  .kidscontent {
+    padding-inline: 8.1%;
+  }
+
+  .faque {
+    font-size: 1.5rem;
+  }
+
+  .faque summary {
+    padding: 2.7%;
+  }
+
+  nav select {
+    padding: 1.9%;
+  }
+
+  nav a {
+    padding: 2.7% 6.9%;
+  }
+
+  .email input {
+    padding: 0.6%;
+  }
+
+  .email button {
+    padding: 0.45%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+
+  .headtext>h1 {
+    font-size: 2.0625rem;
+  }
+
+  nav>img {
+    width: 12.9%;
+  }
+
+  nav {
+    padding: 1.8% 4.8%;
+  }
+
+  .email input {
+    width: 36%;
+  }
+
+  .email button {
+    padding: 0.4% 3.9%;
+  }
+
+
+  #tv img,
+  #download img,
+  #watch img,
+  #kids img,
+  #faq img {
+    width: 48%;
+  }
+
+
+  .tvtext>h2,
+  .downtext>h3,
+  .wattext>h4,
+  .kidstext>h4 {
+    font-size: 2.0625rem;
+  }
+
+  .tvtext>p,
+  .downtext>p,
+  .wattext>p,
+  .kidstext>p {
+    font-size: 1.1875rem;
+  }
+
+  .faque {
+    width: 84%;
+  }
+
+  .faque+p {
+    width: 87%;
+    margin-inline: auto;
+  }
+
+  footer {
+    font-size: 0.9375rem;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  nav select,
+  nav a {
+    font-size: 0.875rem;
+  }
+
+  .headtext {
+    width: 87%;
+    margin-inline: auto;
+  }
+
+  .headtext>h1 {
+    font-size: 1.5rem;
+  }
+
+  .headtext>p {
+    font-size: 1rem;
+  }
+
+  .email input {
+    font-size: 0.875rem;
+  }
+
+  .email button {
+    font-size: 0.875rem;
+    padding: 0.75% 1.5%;
+  }
+
+  nav>div {
+    width: 33%;
+  }
+
+  nav select {
+    padding: 0.4%;
+  }
+
+
+  .tvtext>h2,
+  .downtext>h3,
+  .wattext>h4,
+  .kidstext>h4 {
+    font-size: 1.5625rem;
+  }
+
+  .tvtext>p,
+  .downtext>p,
+  .wattext>p,
+  .kidstext>p {
+    font-size: 0.9375rem;
+  }
+
+  #faq>h5 {
+    font-size: 2.0625rem;
+  }
+
+  .faque {
+    font-size: 1.125rem;
+    margin-block: 6%;
+  }
+
+  .faque span {
+    font-size: 2.25rem;
+  }
+
+  footer {
+    font-size: 0.9375rem;
+  }
+
+}
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+  .headtext * {
+    margin-top: 4.5%;
+  }
+  nav img{
+    width: 19%;
+  }
+  .email>button{
+    display: block;
+    margin-inline: auto;
+  }
+
+  .email>input{
+    width: 69%;
+  }
+
+
+  .headtext>h1 {
+    font-size: 1.125rem;
+  }
+
+  .headtext>p {
+    font-size: 0.875rem;
+  }
+
+
+  nav>div{
+    width: 49%;
+    justify-content: space-evenly;
+    font-size: 0.75rem;
+  }
+  nav>div a{
+    margin-left: auto;
+    padding: 0.9%;
+    font-size: 0.75rem;
+  }
+  nav>div select{
+    margin-left: auto;
+    padding: 0.9%;
+    font-size: 0.75rem;
+
+  }
+
+  .faque+p+.email {
+    margin-top: 9%;
+  }
+  .faque+p+.email>button{
+    margin-top: 6%;
+  }
+ 
+
+  .tvcontent,
+  .watcontent {
+    flex-direction: column;
+  }
+
+  .downcontent,
+  .kidscontent {
+    flex-direction: column-reverse;
+  }
+
+  #tv img,
+  #download img,
+  #watch img,
+  #kids img,
+  #faq img {
+    width: 81%;
+  }
+
+  footer{
+    flex-wrap: wrap;
+    
+  }
+  footer div{
+      margin-top: 9%;
+  }
+   footer div{
+    width: 45%;
+   }
+
+  #faq>h5 {
+    font-size: 1.5rem;
+  }
+
+  .faque {
+    font-size: 0.875rem;
+  }
+
+  .faque span {
+    font-size: 1.5rem;
+  }
+
+  #faq>p{
+    font-size: 0.75rem;
+  }
+
+  footer {
+    font-size: 0.75rem;
+  }
+
+}

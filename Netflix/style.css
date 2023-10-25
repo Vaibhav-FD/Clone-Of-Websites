@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Audiowide', cursive;
+  /* outline: 2px solid green; */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+body {
+  background-color: rgb(35, 35, 35);
+}
+
+/* HEADER STARTS */
+
+
+
+header {
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/dc1cf82d-97c9-409f-b7c8-6ac1718946d6/14a8fe85-b6f4-4c06-8eaf-eccf3276d557/IN-en-20230911-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+
+}
+
+.headshadow {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5% 8.1%;
+}
+
+nav>div {
+  width: 24%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav>img {
+  width: 9%;
+}
+
+nav select {
+  background-color: transparent;
+  color: white;
+  font-size: 1.125rem;
+  padding: 3.9%;
+  outline: 1px solid white;
+  border-radius: 0.1875rem;
+}
+
+nav a {
+  color: white;
+  font-size: 1.125rem;
+  background-color: rgb(229, 9, 20);
+  padding: 5.4% 9%;
+  border-radius: 0.1875rem;
+}
+
+.headtext {
+  text-align: center;
+  padding-block: 8.1%;
+}
+
+.headtext * {
+  margin-top: 1.8%;
+  backdrop-filter: blur(1px);
+}
+
+.headtext>h1 {
+  font: 900 2.8125rem'Audiowide', cursive;
+}
+
+.headtext>p,
+.faque+p {
+  font: 540 1.125rem'Audiowide', cursive;
+}
+
+.email input {
+  width: 27%;
+  background-color: rgba(0, 0, 0, 0.39);
+  border: 1px solid darkgrey;
+  color: white;
+  padding: 1.2%;
+  border-radius: 0.1875rem;
+  font-size: 1.125rem;
+}
+
+.email input::placeholder {
+  color: white;
+}
+
+.email input:focus {
+  outline: 2px solid whitesmoke;
+}
+
+.email button {
+  padding: 1.09%;
+  color: white;
+  font-size: 1.4375rem;
+  background-color: rgb(229, 9, 20);
+  border: none;
+  border-radius: 6px;
+}
+
+
+
+/* HEADER ENDS */
+
+
+
+
+
+
+
+
+
+/* TV , DOWNLOADS , WATCH , KIDS  STARTS */
+
+
+
+#tv,
+#download,
+#watch,
+#kids,
+#faq {
+  margin-top: 0.9%;
+  padding-block: 5.4%;
+  background-color: black;
+  color: white;
+}
+
+.tvcontent,
+.downcontent,
+.watcontent,
+.kidscontent {
+  display: flex;
+  align-items: center;
+  padding-inline: 10.9%;
+}
+
+.tvtext>h2,
+.downtext>h3,
+.wattext>h4,
+.kidstext>h4 {
+  font-size: 2.8125rem;
+}
+
+.tvtext>p,
+.downtext>p,
+.wattext>p,
+.kidstext>p {
+  font-size: 27px;
+  margin-top: 5.4%;
+}
+
+
+
+/* TV , DOWNLOADS , WATCH , KIDS ENDS */
+
+
+
+
+
+
+
+
+
+/* FAQ  STARTS */
+
+
+
+#faq>h5 {
+  font-size: 2.8125rem;
+  text-align: center;
+}
+
+.faque {
+  width: 72%;
+  margin-inline: auto;
+  font-size: 1.6875rem;
+  margin-block: 3.9%;
+}
+
+.faque summary {
+  padding: 2.1%;
+  margin-top: 0.9%;
+  background-color: rgb(45, 45, 45);
+  position: relative;
+}
+
+.faque p {
+  background-color: rgb(45, 45, 45);
+  padding: 2.1%;
+  margin-top: 0%;
+}
+
+.faque span {
+  font-size: 3.5625rem;
+  position: absolute;
+  right: 3%;
+  bottom: 2.1%;
+}
+
+.faque summary:focus span {
+  transform: rotate(45deg);
+  transition-duration: 603ms;
+}
+
+.faque+p,
+.email {
+  text-align: center;
+}
+
+.faque+p+.email {
+  margin-top: 3%;
+}
+
+
+
+/* FAQ  ENDS */
+
+
+
+
+
+
+
+
+/* FOOTER STARTS */
+
+
+
+footer {
+  padding: 3.9% 4.5%; 
+  margin-top: 0.9%;
+  display: flex;
+  gap: 9.12%;
+  font-size: 1.125rem;
+  font-weight: 912;
+  background-color: black;
+  color: white;
+}
+footer div p,footer div select{
+  margin-bottom: 1.125rem;
+}
+
+
+
+/* FOOTER ENDS */

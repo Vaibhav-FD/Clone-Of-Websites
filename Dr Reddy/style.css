@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  /* outline: 1px solid green; */
+}
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+header {
+  position: relative;
+}
+
+
+/* NAV STARTS */
+
+nav {
+  padding-top: 1.5%;
+  padding-inline: 6.3%;
+}
+
+#navtop img {
+  width: 21%;
+}
+
+#navtop>div {
+  width: 63%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#navtop {
+  display: flex;
+  align-items: center;
+  gap: 2.1%;
+  color: rgb(83, 81, 81);
+}
+
+#navtop i {
+  font-size: 1.3125rem;
+}
+
+#navbottom {
+  display: flex;
+  gap: 3.6%;
+  padding-block-start: 1.8%;
+}
+
+#navtop a {
+  color: rgb(83, 81, 81);
+}
+
+#navbottom a {
+  color: rgb(65, 63, 63);
+
+}
+
+#navbottom li {
+  padding-bottom: 1%;
+}
+
+#navtop i:hover,
+#navbottom a:hover {
+  border-bottom: 2px solid red;
+}
+
+nav+img {
+  width: 100%;
+}
+
+.dropdown {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 15%;
+  background-color: white;
+  display: none;
+}
+
+.dropdowninside {
+  display: flex;
+  gap: 3.9%;
+  padding-left: 6.3%;
+}
+
+.dropdowninside div {
+  width: 16.5%;
+}
+
+.dropdown div p {
+  padding-block: 5.4%;
+}
+
+#navbottom li:hover .dropdown {
+  display: block;
+}
+
+
+
+.dropworld {
+  display: none;
+}
+
+.dropdownworld {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 9%;
+  padding-block: 9%;
+  background-color: white;
+  padding-left: 6.3%;
+}
+
+.dropdowninsideworld {
+  display: flex;
+
+}
+
+.dropdowninsideworld>:first-child {
+  font-size: 2.8125rem;
+}
+
+.dropdowninsideworld>:nth-child(2) {
+  display: flex;
+  position: absolute;
+  gap: 9%;
+  left: 50%;
+  top: 27%;
+}
+
+.country p {
+  margin-top: 39%;
+}
+
+#navtop>:nth-child(3) {
+  padding-block: 1%;
+  padding-left: 1.5%;
+}
+
+#navtop>:nth-child(3):hover .dropworld {
+  display: block;
+}
+
+
+
+/* NAV ENDS */
+
+
+
+
+
+
+
+
+
+
+
+/* GOOD HEALTH STARTS */
+
+#goodhealth {
+  padding: 9.12%;
+}
+
+.gohelcontent {
+  display: flex;
+  gap: 9%;
+  align-items: center;
+}
+
+.gohelcontent>div {
+  position: relative;
+}
+
+.gohelcontent * {
+  margin-bottom: 9%;
+}
+
+.gohelcontent h1 {
+  font-size: 2.8125rem;
+  font-weight: 540;
+}
+
+.gohelcontent p {
+  font-size: 1.1875rem;
+}
+
+.gohelcontent a,
+.gohelcontent span {
+  display: inline-block;
+  font-size: 1.6875rem;
+  position: absolute;
+  left: -0.2%;
+}
+
+.gohelcontent>div span {
+  left: 100%;
+  bottom: 2%;
+  display: none;
+}
+
+.gohelcontent a:hover {
+  border-radius: 50%;
+  padding: 3%;
+  background-color: rgb(96, 10, 157);
+  color: whitesmoke;
+  transition: all 210ms;
+}
+
+.gohelcontent a:hover span {
+  display: block;
+  color: indigo;
+  bottom: 18%;
+  left: 120%;
+}
+
+.gohelcontent>div span {
+  font-size: 19px;
+  width: 120px;
+}
+
+
+
+
+/* GOOD HEALTH ENDS */
+
+
+
+
+
+
+
+
+
+
+
+
+/* CORES STARTS */
+
+#ourcore{
+  padding: 9.12%;
+  background-color: rgb(237,237,237);
+}
+#ourcore>h2{
+  font-size: 45px;
+  padding-bottom: 1.9%;
+  border-bottom: 2px solid red;
+}
+.coretext>:nth-child(1){
+  height: 45%;
+  overflow: hidden;
+}
+.coretext h3{
+  margin-block: 6%;
+}
+.coretext p{
+  line-height: 1.5;
+}
+
+.corecontent{
+  display: flex;
+  gap: 2.1%;
+  margin-top: 2.1%;
+}
+.coretext img{
+  width: 100%;
+  height: 100%;
+}
+.coretext img:hover{
+  transform: scale(1.2);
+  transition-duration: 609ms;
+}
+
+
+/* CORES ENDS */
+
+
+
+
+
+
+
+
+
+
+/* FOOTER  STARTS*/
+
+
+
+footer{
+  padding: 4.5% 8.1%;
+  background-color: black;
+  color: white;
+}
+
+#foottop{
+  display: flex;
+  justify-content: space-between;
+}
+#foottop h6{
+  font-size: 1.1875rem;
+  margin-bottom: 1.3125rem;
+}
+#foottop p{
+  margin-bottom: 0.5625rem;
+}
+
+
+
+#footbottom{
+  margin-top: 5.4%;
+}
+footer img{
+  display: block;
+  width: 12%;
+  filter: brightness(10);
+  margin-left: auto;
+}
+#footbottom>:nth-child(2){
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.1%;
+  margin-block: 1.2%;
+  border-block: 1px solid white;
+  padding-block: 1.2%;
+}
+
+.foobot{
+  display: flex;
+  justify-content: space-between;
+}
+.foobot>:nth-child(1){
+  display: flex;
+  align-items: center;
+  width: 57%;
+  justify-content: space-between;
+}
+
+.foobot i{
+  font-size: 27px;
+  margin-left: 0.9375rem;
+}
+#footbottom+p{
+  margin-top: 1.2%;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER  ENDS*/
