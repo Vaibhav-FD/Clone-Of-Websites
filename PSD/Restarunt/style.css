@@ -57,6 +57,9 @@ nav>p {
 nav>a {
   color: rgb(42, 195, 169);
 }
+nav>details{
+  display: none;
+}
 
 #navlinks>img {
   width: 5.4%;

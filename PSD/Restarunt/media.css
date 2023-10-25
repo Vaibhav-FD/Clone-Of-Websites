@@ -153,10 +153,44 @@
 
 
 
-@media (max-width: 630px) {
+@media (max-width: 630px){
 
   header>img {
     display: none;
+  }
+  nav{
+    position: relative;
+    justify-content: space-between;
+    padding-inline: 9%;
+  }
+
+  #navlinks{
+    display: none;
+  }
+  #navlinks2{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.548);
+    right: 0;
+    top: 129%;
+    padding-inline: 1.6875rem;
+    border-radius: 39% 9%;
+    border: 3px solid rgb(42, 195, 169);
+  }
+  #navlinks2:hover{
+    transform: scale(1.2);
+    top: 150%;
+    transition-duration: 609ms;
+    
+  }
+  #navlinks2 a{
+    color: whitesmoke;
+  }
+  
+  nav>details{
+    display: block;
+    font-size: 1.3125rem;
+    position: absolute;
+    left: 93%;
   }
 
   .headcontent {
