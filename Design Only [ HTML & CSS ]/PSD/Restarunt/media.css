@@ -1,0 +1,340 @@
+@media (max-width: 1200px) {
+
+
+
+  .headcontent h1 {
+    font-size: 2.8125rem;
+  }
+
+  .headcontent h1+p {
+    font-size: 21px;
+  }
+
+  #booktb {
+    margin-top: 9%;
+    padding: 0.9% 3.7%;
+  }
+
+  #booktb {
+    font-size: 15px;
+  }
+
+  #booktb a {
+    margin-top: 1.8%;
+    padding: 0.875rem;
+    font-size: 16px;
+  }
+
+  #booktb input {
+    padding: 0.75rem;
+
+  }
+
+
+  header>img {
+    top: 21%;
+    right: 3%;
+  }
+
+  .headcontent p {
+    font-size: 1.125rem;
+  }
+
+
+  .custcon {
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 3.375rem;
+    column-gap: 7.5rem;
+  }
+
+
+  .cust {
+    width: 39%;
+  }
+
+
+  .incust * {
+    margin-top: 9.6%;
+  }
+
+  .subinfo * {
+    width: 72%;
+  }
+
+  .subinfo>button {
+    width: 21%;
+    padding: 1.5%;
+  }
+
+  #footer h6 {
+    font-size: 1.8125rem;
+  }
+
+  .foot p {
+    color: black;
+    font-size: 1.1875rem;
+  }
+
+
+}
+
+
+
+
+
+
+
+@media (max-width:912px) {
+
+
+  .custcon {
+    flex-wrap: nowrap;
+    gap: 1.8%;
+
+  }
+
+  .cust>img {
+    width: 81%;
+    height: 11.25rem;
+  }
+
+  .cust {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+
+
+
+@media (max-width: 810px) {
+
+  header>img {
+    width: 57%;
+  }
+
+  .headcontent {
+    width: 51%;
+  }
+
+  header>img {
+    z-index: -1;
+  }
+
+  .food {
+    width: 31%;
+  }
+
+  #ourres,
+  #fresh {
+    width: 95.5%;
+  }
+
+  .ourrescon,
+  .freshcon {
+    width: 51%;
+  }
+
+  .chef {
+    width: 48%;
+  }
+
+  #thechef>img {
+    border-radius: 0px 50px 50px 0px;
+  }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 630px){
+
+  header>img {
+    display: none;
+  }
+  nav{
+    position: relative;
+    justify-content: space-between;
+    padding-inline: 9%;
+  }
+
+  #navlinks{
+    display: none;
+  }
+  #navlinks2{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.548);
+    right: 0;
+    top: 129%;
+    padding-inline: 1.6875rem;
+    border-radius: 39% 9%;
+    border: 3px solid rgb(42, 195, 169);
+  }
+  #navlinks2:hover{
+    transform: scale(1.2);
+    top: 150%;
+    transition-duration: 609ms;
+    
+  }
+  #navlinks2 a{
+    color: whitesmoke;
+  }
+  
+  nav>details{
+    display: block;
+    font-size: 1.3125rem;
+    position: absolute;
+    left: 93%;
+  }
+
+  .headcontent {
+    width: 81%;
+  }
+
+   .typefood{
+    flex-direction: column;
+   }
+
+   .food {
+    width: 63%;
+    margin-inline: auto;
+    margin-top: 9%;
+   }
+
+   .food>img {
+    width: 36%;
+    height: 36%;
+  }
+
+
+  .ourrescon :nth-child(1),
+.freshcon :nth-child(1),
+.chef :nth-child(1) {
+  
+  font-size: 1.3125rem;
+
+}
+
+  .ourrescon>h3,
+.freshcon>h3,
+.chef>h3 {
+  font-size: 2.25rem;
+}
+
+
+.ourrescon :nth-child(3),
+.freshcon :nth-child(3),
+.chef :nth-child(3) {
+  font-size: 0.9375rem;
+  
+}
+
+
+.food>a,
+.ourrescon>a,
+.freshcon>a,
+.chef>a {
+  font-size: 1rem;
+  padding: 1.2% 6.9%;
+}
+
+.foot {
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+
+.sign {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign>div {
+  display: flex;
+  align-self: center;
+}
+.sign *{
+  margin-top: 6%;
+}
+.sign>input {
+  width: 80%;
+  padding: 1.5%;
+}
+
+
+}
+
+
+
+
+
+
+@media (max-width: 540px) {
+
+  .headcontent {
+    width: 93%;
+    
+  }
+
+#fresh {
+  flex-direction: column;
+  align-items: center;
+}
+
+#ourres {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+#ourres>img,
+#fresh>img {
+  width: 81%;
+  height: 210px;
+}
+
+.ourrescon,
+.freshcon {
+  width: 81%;
+  
+}
+
+#thechef {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+#thechef>img {
+  width: 81%;
+}
+
+.chef {
+  width: 81%;
+}
+
+
+
+.custcon {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cust{
+  width: 96%;
+  display: flex;
+  margin-top: 6%;
+}
+
+.incust{
+  width: 57%;
+}
+.cust>img {
+  width: 33%;
+}
+}

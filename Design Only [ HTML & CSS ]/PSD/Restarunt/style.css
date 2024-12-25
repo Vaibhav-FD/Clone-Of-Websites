@@ -1,0 +1,602 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(238, 228, 205);
+}
+
+
+
+/* HEADER STARTS */
+
+
+header {
+  padding-top: 2.9%;
+  position: relative;
+}
+
+nav {
+  width: 93%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-inline: auto;
+  border-radius: 120px;
+  padding: 0.6%;
+  background-color: rgb(3, 26, 43);
+  color: white;
+  font-size: 1.0625rem;
+}
+
+#navlinks {
+  width: 57%;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+#navlinks a {
+  color: white;
+}
+
+nav>p {
+  font-size: 1.3125rem;
+}
+
+nav>a {
+  color: rgb(42, 195, 169);
+}
+nav>details{
+  display: none;
+}
+
+#navlinks>img {
+  width: 5.4%;
+  position: absolute;
+  right: 0%;
+  top: 120%;
+}
+
+.headcontent {
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  margin-inline-start: 3.5%;
+  margin-block-start: 3%;
+  text-align: justify;
+  padding-block: 1.2%;
+}
+
+.headcontent h1 {
+  font-size: 3.9375rem;
+}
+
+.headcontent h1+p {
+  font-size: 1.6875rem;
+  letter-spacing: 0.125rem;
+  word-spacing: 0.3125rem;
+}
+
+.headcontent p {
+  font-size: 1.3125rem;
+}
+
+.headcontent h1,
+.headcontent p {
+  margin-block-start: 3.6%;
+}
+
+.exmenu {
+  margin-block-start: 3.6%;
+  padding: 3% 0%;
+}
+
+.exmenu>button {
+  padding: 2.1% 7.2%;
+  margin-inline-end: 9%;
+  color: white;
+  background-color: rgb(255, 87, 17);
+  border: none;
+  font-weight: 720;
+  font-size: 1.125rem;
+}
+
+.exmenu>a {
+  font-weight: 810;
+  color: black;
+  font-size: 1.125rem;
+}
+
+header>img {
+  width: 69%;
+  height: 54%;
+  position: absolute;
+  top: 30.5%;
+  right: 3%;
+}
+
+header>span {
+  display: inline-block;
+  margin-inline-start: 3.5%;
+  margin-block-start: 9%;
+  margin-block-end: 3.6%;
+  font-size: 1.125rem;
+  font-weight: 720;
+}
+
+#booktb {
+  padding: 1.2% 3.9%;
+  background-color: white;
+  width: 93%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-inline: auto;
+  border-radius: 1.8125rem;
+
+}
+
+#booktb a {
+  background-color: rgb(42, 195, 169);
+  color: white;
+  padding: 1.125rem;
+  border: none;
+  font-size: 1.3125rem;
+  margin-top: 1%;
+  border-radius: 1.3125rem;
+  font-weight: 900;
+}
+
+#booktb input {
+  padding: 1.1875rem;
+  border-radius: 1.3125rem;
+  background-color: rgb(238, 228, 205);
+  border: 1px solid black;
+}
+
+
+
+
+
+
+
+/* FOOD CATEGORIES STARTS */
+
+
+#foodcat,
+#ourres,
+#fresh,
+#thechef,
+#customers,
+#subscribe {
+  margin-top: 15%;
+}
+
+#foodcat>p,
+#foodcat>h2 {
+  color: orange;
+  text-align: center;
+  font-weight: 630;
+}
+
+#foodcat>p,
+.cov>p {
+  font-size: 1.3125rem;
+}
+
+#foodcat>h2 {
+  font-size: 2.4375rem;
+  margin-top: 1.8%;
+  color: black;
+}
+
+.typefood {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5.4%;
+}
+
+.food {
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.7%;
+  background-color: white;
+  border-radius: 2.4375rem;
+}
+
+.food * {
+  margin-top: 6.9%;
+}
+
+.food>img {
+  width: 45%;
+  height: 45%;
+}
+
+.food>h2 {
+  font-size: 2rem;
+  font-weight: 603;
+}
+
+.food>p {
+  font-size: 1.3125rem;
+  text-align: justify;
+}
+
+.food>a,
+.ourrescon>a,
+.freshcon>a,
+.chef>a {
+  font-size: 1.4375rem;
+  background-color: orangered;
+  color: white;
+  font-weight: 702;
+  padding: 4.5% 8.1%;
+  border-radius: 2.8125rem;
+}
+
+/* FOOD CATEGORIES ENDS */
+
+
+
+
+
+
+
+
+/* COVID STARTS */
+
+#covid {
+  margin-top: 12%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.cov {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3%;
+}
+
+.cov * {
+  margin-top: 0.45%;
+}
+
+.cov h2 {
+  font-size: 2.4375rem;
+  font-weight: 912;
+}
+
+.cov p {
+  color: rgb(42, 195, 169);
+  font-weight: 810;
+}
+
+.cov>a {
+  color: white;
+  font-weight: 700;
+  background-color: rgb(42, 195, 169);
+  padding: 0.6% 2.1%;
+  border-radius: 3.375rem;
+}
+
+.covimages {
+  margin-top: 6%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-inline: auto;
+}
+
+.covimages>img {
+  width: 31.9%;
+  height: 36%;
+}
+
+#covid>:nth-child(2) {
+  width: 18%;
+  position: absolute;
+  top: 3%;
+  left: -6%;
+}
+
+#covid>:nth-child(3) {
+  width: 18%;
+  position: absolute;
+  top: 3%;
+  right: -6%;
+}
+
+.covimages :nth-child(2) {
+  width: 36%;
+}
+
+/* COVID ENDS */
+
+
+
+
+
+
+/* OUR RESTAURANT & FRESH AND HEALTY & THE CHEF STARTS */
+
+#ourres,
+#fresh {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+}
+
+#ourres>img,
+#fresh>img {
+  width: 39%;
+}
+
+.ourrescon,
+.freshcon {
+  width: 40%;
+  align-self: center;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+.ourrescon *,
+.freshcon *,
+.chef * {
+  margin-top: 5%;
+}
+
+.ourrescon :nth-child(1),
+.freshcon :nth-child(1),
+.chef :nth-child(1) {
+  color: orange;
+  font-size: 1.6875rem;
+  font-weight: 810;
+}
+
+.ourrescon>h3,
+.freshcon>h3,
+.chef>h3 {
+  font-size: 2.8125rem;
+}
+
+.ourrescon :nth-child(3),
+.freshcon :nth-child(3),
+.chef :nth-child(3) {
+  font-size: 1.3125rem;
+  text-align: justify;
+}
+
+
+.freshcon>a {
+  background-color: rgb(42, 195, 169);
+}
+
+#thechef {
+  width: 96%;
+  display: flex;
+  justify-content: space-around;
+  margin-inline: auto;
+  background-color: rgb(249, 248, 239);
+  border-radius: 3.375rem;
+}
+
+.chef {
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding: 2.7% 1.5%;
+}
+
+#thechef>img {
+  width: 45%;
+
+}
+
+.chef :nth-child(1) {
+  color: rgb(42, 195, 169);
+}
+
+/* OUR RESTAURANT & FRESH AND HEALTY & THE CHEF ENDS  */
+
+
+
+
+
+
+
+/* CUSTOMERS SAY STARTS  */
+
+#customers>p,
+#customers>h4,
+#subscribe>h5,
+#subscribe>p {
+  text-align: center;
+}
+
+#customers>h4,
+#subscribe>p {
+  font-size: 2.4375rem;
+  font-weight: 912;
+}
+
+#customers>p,
+#subscribe>h5 {
+  font-weight: 810;
+  color: orangered;
+  font-size: 1.3125rem;
+}
+
+.cust>img {
+  width: 39%;
+  border-radius: 50%;
+}
+
+
+
+
+.custcon {
+  width: 96%;
+  margin-inline: auto;
+  display: flex;
+  gap: 3.6%;
+  margin-top: 8.1%;
+}
+
+
+.cust {
+  width: 39%;
+  display: flex;
+  gap: 9%;
+  background-color: white;
+  border-radius: 29px;
+  padding: 2.1%;
+}
+
+
+
+
+
+
+
+
+.incust * {
+  margin-top: 3.6%;
+}
+
+.incust>h4 {
+  font-size: 1.8125rem;
+  font-weight: 600;
+}
+
+.incust>p {
+  font-size: 1.125rem;
+}
+
+/* CUSTOMERS SAY ENDS  */
+
+
+
+
+
+
+
+
+
+/* SUBSCRIBE STARTS  */
+
+
+
+.subinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subinfo * {
+  width: 50%;
+  margin-top: 1.8%;
+  padding: 1.5%;
+  border-radius: 54px;
+  border: none;
+  background-color: rgb(209, 195, 163);
+}
+
+.subinfo textarea {
+  border-radius: 29px;
+  resize: none;
+}
+
+.subinfo>button {
+  width: 15%;
+  padding: 0.9%;
+  font-weight: 720;
+  background-color: rgb(42, 195, 169);
+}
+
+.subinfo ::placeholder {
+  font-weight: 630;
+  color: black;
+}
+
+
+
+
+/* SUBSCRIBE ENDS  */
+
+
+
+
+
+
+/* FOOTER STARTS  */
+
+#footer {
+  margin-top: 9%;
+  background-color: rgb(255, 159, 28);
+}
+
+#footer h6 {
+  color: white;
+  font-size: 2.25rem;
+  font-weight: 720;
+}
+
+.foot p {
+  color: black;
+  font-size: 1.3125rem;
+  font-weight: 546;
+  margin-top: 33px;
+}
+
+.foot {
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  gap: 6.9%;
+  padding-block: 6.9%;
+}
+
+.sign {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.sign>input {
+  background-color: transparent;
+  border: 1px solid rgb(94, 26, 203);
+  width: 100%;
+  height: 20%;
+  border-radius: 54px;
+}
+
+.sign>div {
+  text-align: right;
+  align-self: flex-end;
+}
+
+
+/* FOOTER ENDS  */

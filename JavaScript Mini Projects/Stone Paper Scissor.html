@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissor</title>
+    <style>
+        * {
+            color-scheme: dark;
+            font: 600 1.29rem arial;
+        }
+
+        .choice {
+            display: flex;
+            justify-content: space-evenly;
+            margin-block: 2.7rem;
+        }
+
+        .choice p {
+            text-align: center;
+        }
+
+        .choice img {
+            filter: invert(1);
+            height: 210px;
+            width: 210px;
+            transition: all 270ms ease-in;
+            border-radius: 1.09rem;
+            cursor: pointer;
+        }
+
+        .choice img:hover {
+            filter: drop-shadow(0px 0px 9px whitesmoke);
+            transform: scale(1.2);
+        }
+
+        .choice img:hover+p {
+            color: #50d750;
+        }
+
+
+        .result>:nth-child(2) {
+            font-size: 2.7rem;
+            -webkit-text-stroke: 2px pink;
+            text-shadow: 0px 0px 54px lime;
+            color: transparent;
+            margin-left: 2.1rem;
+            margin-block: 0.54rem;
+        }
+
+        hr {
+            height: 0.9vh;
+            border: none;
+            background-image: linear-gradient(90deg, navy, burlywood, pink, blueviolet);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="choice">
+
+        <div>
+
+            <img src="	https://www.orjon.com/rockpaperscissors/images/hand_select_rock.png" alt="stone">
+            <p data-value="1">STONE</p>
+
+        </div>
+
+        <div>
+
+            <img src="	https://www.orjon.com/rockpaperscissors/images/hand_select_paper.png" alt="paper">
+            <p data-value="2">PAPER</p>
+
+        </div>
+
+        <div>
+
+            <img src="https://www.orjon.com/rockpaperscissors/images/hand_select_scissors.png" alt="scissor">
+            <p data-value="3">SCISSOR</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="result">
+
+        <p>You : <span id="you"></span></p>
+        <p>VS</p>
+        <p>Computer : <span id="computer"></span></p>
+
+    </div>
+
+
+    <script>
+
+        const images = document.querySelectorAll(`.choice img`);
+
+        const text = document.querySelectorAll(`.choice p`);
+
+        // let currRandom = null;
+
+
+
+
+
+
+        for (let i = 0; i < images.length; i++) {
+
+
+            images[i].addEventListener(`click`, () => {
+
+                // let preRandom = currRandom;
+
+                // currRandom = Math.floor(Math.random() * 3);
+
+                let currRandom = Math.floor(Math.random() * 3);
+
+
+                let yourChoice = document.getElementById(`you`);
+
+                let compChoice = document.getElementById(`computer`);
+
+
+                let userValue = +images[i].nextElementSibling.getAttribute(`data-value`);
+
+                let compValue = null;
+
+
+
+
+
+
+                yourChoice.innerText = text[i].innerText;
+
+
+                // WHILE LOOP THIS WILL NOT REPEAT PREVIOUS VALUE TWICE OR MORE THAN TWICE
+
+                // while (preRandom === currRandom) {
+
+                //     currRandom = Math.floor(Math.random() * 3);
+                // }
+
+                compChoice.innerText = text[currRandom].innerText;
+
+
+                (compChoice.innerText === `STONE`) ? compValue = 1 :
+                (compChoice.innerText === `PAPER`) ? compValue = 2 :
+                compValue = 3;
+
+
+
+
+                if (userValue === compValue) {
+                    setTimeout("alert('DRAW.');",100); 
+                }
+
+                else if (
+                    (userValue === 1 && compValue === 2) ||
+                    (userValue === 2 && compValue === 3) ||
+                    (userValue === 3 && compValue === 1)
+                ) {
+
+                    setTimeout("alert('YOU LOST TRY AGAIN.');",100);
+                    
+                }
+
+                else {
+                    
+                    setTimeout("alert('YOU WON.');",100);
+                }
+
+            })
+
+        }
+
+    </script>
+
+</body>
+
+</html>

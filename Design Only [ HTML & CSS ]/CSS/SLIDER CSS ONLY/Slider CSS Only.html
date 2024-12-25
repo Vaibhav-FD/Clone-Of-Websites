@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider Only CSS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #e3e1e1;
+      color: white;
+
+    }
+
+    .slider {
+      height: 90vh;
+      width: 96%;
+      border: 6px solid transparent;
+      border-image: linear-gradient(120deg, navy, aqua, blueviolet)9;
+      box-shadow: 0px 0px 39px 21px #454444;
+      margin-inline: auto;
+      transition: background-image 390ms ease-in-out;
+    }
+
+    .box {
+      position: relative;
+    }
+
+    input {
+      height: 27px;
+      width: 27px;
+      position: absolute;
+      bottom: 4%;
+      accent-color: green;
+    }
+  
+
+    .box {
+      padding-top: 3.6rem;
+      position: relative;
+    }
+
+    input:hover {
+      cursor: pointer;
+    }
+
+    #first {
+      left: 43%;
+    }
+
+    #second {
+      left: 48%;
+    }
+
+    #third {
+      left: 53%;
+    }
+
+    #first:checked~.slider {
+      background-image: url(IMAGES/IMG1.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    #second:checked~.slider {
+      background-image: url(IMAGES/IMG2.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    #third:checked~.slider {
+      background-image: url(IMAGES/IMG3.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    .tooltip {
+      position: absolute;
+      background-color: transparent;
+      padding: 1rem 2.1rem;
+      font-size: 1rem;
+      border-radius: 1rem;
+      word-spacing: 0.54rem;
+      letter-spacing: 0.09rem;
+      font-family: Arial, Helvetica, sans-serif;
+      border: 3px solid purple;
+      top: 3.6%;
+      left: 3.6%;
+      backdrop-filter: blur(21px);
+    }
+
+    .tooltip span {
+      color: lime;
+      font-size: 1.5rem;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+
+    <input type="radio" name="slidebutton" id="first" checked autofocus>
+    <input type="radio" name="slidebutton" id="second">
+    <input type="radio" name="slidebutton" id="third">
+
+    <div class="slider"></div>
+
+    <p class="tooltip">YOU CAN ALSO USE <span>⇛⇓</span> AND <span>⇚⇑</span> ARROW KEYS OF KEYBORD TO SLIDE.</p>
+
+  </div>
+
+</body>
+
+</html>
