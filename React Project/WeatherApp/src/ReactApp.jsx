@@ -30,7 +30,7 @@ function ReactApp() {
         const data = await response.json();
         const detectedCity = data[0]?.name || 'Unknown Location';
 
-        setCityName(detectedCity.normalize("NFD").replace(/[\u0300-\u036f]/g, ""));
+        setCityName(detectedCity.slice(0,detectedCity.indexOf(' ')));
 
       }
       catch (err) {
