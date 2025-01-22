@@ -10,7 +10,6 @@ function ReactApp() {
   const [loading, setLoading] = useState(false);
 
 
-
   function getLocationWeather() {
 
     async function accept(position) {
@@ -28,9 +27,13 @@ function ReactApp() {
         }
 
         const data = await response.json();
+        console.log(data);
+
+        
         const detectedCity = data[0]?.name || 'Unknown Location';
 
-        setCityName(detectedCity.slice(0,detectedCity.indexOf(' ')));
+        setCityName(detectedCity);
+        
 
       }
       catch (err) {
